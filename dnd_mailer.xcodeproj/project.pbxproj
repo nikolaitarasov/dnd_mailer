@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		5BF1E1A31D614F36005F8E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A21D614F36005F8E0F /* main.m */; };
 		5BF1E1A61D614F36005F8E0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A51D614F36005F8E0F /* AppDelegate.m */; };
-		5BF1E1A91D614F36005F8E0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A81D614F36005F8E0F /* ViewController.m */; };
+		5BF1E1A91D614F36005F8E0F /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A81D614F36005F8E0F /* MainMenu.m */; };
 		5BF1E1AC1D614F36005F8E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AA1D614F36005F8E0F /* Main.storyboard */; };
 		5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AD1D614F36005F8E0F /* dnd_mailer.xcdatamodeld */; };
 		5BF1E1B11D614F36005F8E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1B01D614F36005F8E0F /* Assets.xcassets */; };
 		5BF1E1B41D614F36005F8E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1B21D614F36005F8E0F /* LaunchScreen.storyboard */; };
 		5BF1E1BF1D614F36005F8E0F /* dnd_mailerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1BE1D614F36005F8E0F /* dnd_mailerTests.m */; };
 		5BF1E1CA1D614F36005F8E0F /* dnd_mailerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1C91D614F36005F8E0F /* dnd_mailerUITests.m */; };
+		5BF1E1D91D618AD8005F8E0F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1D81D618AD8005F8E0F /* DataManager.m */; };
+		5BF1E1DC1D618B9F005F8E0F /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,8 @@
 		5BF1E1A21D614F36005F8E0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BF1E1A41D614F36005F8E0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BF1E1A51D614F36005F8E0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5BF1E1A71D614F36005F8E0F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5BF1E1A81D614F36005F8E0F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5BF1E1A71D614F36005F8E0F /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		5BF1E1A81D614F36005F8E0F /* MainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		5BF1E1AB1D614F36005F8E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BF1E1AE1D614F36005F8E0F /* dnd_mailer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dnd_mailer.xcdatamodel; sourceTree = "<group>"; };
 		5BF1E1B01D614F36005F8E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		5BF1E1C51D614F36005F8E0F /* dnd_mailerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dnd_mailerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1E1C91D614F36005F8E0F /* dnd_mailerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dnd_mailerUITests.m; sourceTree = "<group>"; };
 		5BF1E1CB1D614F36005F8E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF1E1D71D618AD8005F8E0F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = ../../NewApp/HomeWorkCoreData/DataManager.h; sourceTree = "<group>"; };
+		5BF1E1D81D618AD8005F8E0F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = ../../NewApp/HomeWorkCoreData/DataManager.m; sourceTree = "<group>"; };
+		5BF1E1DA1D618B9F005F8E0F /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataTableViewController.h; path = ../../NewApp/HomeWorkCoreData/CoreDataTableViewController.h; sourceTree = "<group>"; };
+		5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = ../../NewApp/HomeWorkCoreData/CoreDataTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +111,13 @@
 			children = (
 				5BF1E1A41D614F36005F8E0F /* AppDelegate.h */,
 				5BF1E1A51D614F36005F8E0F /* AppDelegate.m */,
-				5BF1E1A71D614F36005F8E0F /* ViewController.h */,
-				5BF1E1A81D614F36005F8E0F /* ViewController.m */,
+				5BF1E1A71D614F36005F8E0F /* MainMenu.h */,
+				5BF1E1A81D614F36005F8E0F /* MainMenu.m */,
 				5BF1E1AA1D614F36005F8E0F /* Main.storyboard */,
+				5BF1E1D71D618AD8005F8E0F /* DataManager.h */,
+				5BF1E1D81D618AD8005F8E0F /* DataManager.m */,
+				5BF1E1DA1D618B9F005F8E0F /* CoreDataTableViewController.h */,
+				5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */,
 				5BF1E1B01D614F36005F8E0F /* Assets.xcassets */,
 				5BF1E1B21D614F36005F8E0F /* LaunchScreen.storyboard */,
 				5BF1E1B51D614F36005F8E0F /* Info.plist */,
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF1E1A91D614F36005F8E0F /* ViewController.m in Sources */,
+				5BF1E1A91D614F36005F8E0F /* MainMenu.m in Sources */,
+				5BF1E1D91D618AD8005F8E0F /* DataManager.m in Sources */,
+				5BF1E1DC1D618B9F005F8E0F /* CoreDataTableViewController.m in Sources */,
 				5BF1E1A61D614F36005F8E0F /* AppDelegate.m in Sources */,
 				5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */,
 				5BF1E1A31D614F36005F8E0F /* main.m in Sources */,
@@ -502,6 +514,7 @@
 				5BF1E1D01D614F36005F8E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF1E1D11D614F36005F8E0F /* Build configuration list for PBXNativeTarget "dnd_mailerTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +523,7 @@
 				5BF1E1D31D614F36005F8E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF1E1D41D614F36005F8E0F /* Build configuration list for PBXNativeTarget "dnd_mailerUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +532,7 @@
 				5BF1E1D61D614F36005F8E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

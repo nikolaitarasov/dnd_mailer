@@ -6,17 +6,17 @@
 //  Copyright © 2016 Mykola Tarasov. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainMenu.h"
 
-@interface ViewController ()
+@interface MainMenu ()
 
 @end
 
-@implementation ViewController
+@implementation MainMenu
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"ddd";
 }
 
 - (void)didReceiveMemoryWarning {
