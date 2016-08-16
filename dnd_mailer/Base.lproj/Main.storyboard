@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uDe-1c-SCZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bzj-mA-5Tn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -31,7 +31,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jc3-aN-AHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="-861"/>
+            <point key="canvasLocation" x="1932" y="-885"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="WIK-K5-4KZ">
@@ -63,7 +63,38 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a28-Ib-4fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="482"/>
+            <point key="canvasLocation" x="1196" y="-322"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Suw-Z0-pYN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohn-EU-N9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Bzj-mA-5Tn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F38-xp-ixA"/>
+                        <viewControllerLayoutGuide type="bottom" id="o4o-ut-ybx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCb-EG-e7R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="toR-IL-4XO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="764"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VH-Cb-mkI">
+                                <rect key="frame" x="143" y="311" width="206" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VLi-AY-ixo"/>
+                    <connections>
+                        <segue destination="uDe-1c-SCZ" kind="show" id="DIZ-Fc-UM3"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-436" y="-322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pbb-vg-mLw">
@@ -74,12 +105,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6pc-NE-Fir" kind="relationship" relationship="rootViewController" id="bqa-Iy-YPN"/>
+                        <segue destination="6pc-NE-Fir" kind="relationship" relationship="rootViewController" id="FOf-rc-kX2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGh-t6-MN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="482"/>
+            <point key="canvasLocation" x="348" y="-322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch_image.jpg" width="736" height="1308"/>
+    </resources>
 </document>

@@ -13,12 +13,13 @@
 		5BF1E1AC1D614F36005F8E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AA1D614F36005F8E0F /* Main.storyboard */; };
 		5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AD1D614F36005F8E0F /* dnd_mailer.xcdatamodeld */; };
 		5BF1E1B11D614F36005F8E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1B01D614F36005F8E0F /* Assets.xcassets */; };
-		5BF1E1B41D614F36005F8E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1B21D614F36005F8E0F /* LaunchScreen.storyboard */; };
 		5BF1E1BF1D614F36005F8E0F /* dnd_mailerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1BE1D614F36005F8E0F /* dnd_mailerTests.m */; };
 		5BF1E1CA1D614F36005F8E0F /* dnd_mailerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1C91D614F36005F8E0F /* dnd_mailerUITests.m */; };
 		5BF1E1D91D618AD8005F8E0F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1D81D618AD8005F8E0F /* DataManager.m */; };
 		5BF1E1DC1D618B9F005F8E0F /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */; };
 		5BF1E1DF1D61910C005F8E0F /* InboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1DE1D61910C005F8E0F /* InboxView.m */; };
+		5BF1E1E21D6193DE005F8E0F /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1E11D6193DE005F8E0F /* LaunchView.m */; };
+		5BF1E1E91D6199A4005F8E0F /* launch_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1E81D6199A4005F8E0F /* launch_image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,6 @@
 		5BF1E1AB1D614F36005F8E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BF1E1AE1D614F36005F8E0F /* dnd_mailer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dnd_mailer.xcdatamodel; sourceTree = "<group>"; };
 		5BF1E1B01D614F36005F8E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5BF1E1B31D614F36005F8E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BF1E1B51D614F36005F8E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF1E1BA1D614F36005F8E0F /* dnd_mailerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dnd_mailerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1E1BE1D614F36005F8E0F /* dnd_mailerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dnd_mailerTests.m; sourceTree = "<group>"; };
@@ -62,6 +62,9 @@
 		5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataTableViewController.m; path = ../../NewApp/HomeWorkCoreData/CoreDataTableViewController.m; sourceTree = "<group>"; };
 		5BF1E1DD1D61910C005F8E0F /* InboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InboxView.h; path = ../InboxView.h; sourceTree = "<group>"; };
 		5BF1E1DE1D61910C005F8E0F /* InboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InboxView.m; path = ../InboxView.m; sourceTree = "<group>"; };
+		5BF1E1E01D6193DE005F8E0F /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchView.h; path = ../LaunchView.h; sourceTree = "<group>"; };
+		5BF1E1E11D6193DE005F8E0F /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchView.m; path = ../LaunchView.m; sourceTree = "<group>"; };
+		5BF1E1E81D6199A4005F8E0F /* launch_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +125,13 @@
 				5BF1E1D81D618AD8005F8E0F /* DataManager.m */,
 				5BF1E1DA1D618B9F005F8E0F /* CoreDataTableViewController.h */,
 				5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */,
+				5BF1E1E01D6193DE005F8E0F /* LaunchView.h */,
+				5BF1E1E11D6193DE005F8E0F /* LaunchView.m */,
 				5BF1E1B01D614F36005F8E0F /* Assets.xcassets */,
 				5BF1E1AA1D614F36005F8E0F /* Main.storyboard */,
-				5BF1E1B21D614F36005F8E0F /* LaunchScreen.storyboard */,
 				5BF1E1B51D614F36005F8E0F /* Info.plist */,
 				5BF1E1AD1D614F36005F8E0F /* dnd_mailer.xcdatamodeld */,
+				5BF1E1E51D61965C005F8E0F /* images */,
 				5BF1E1A11D614F36005F8E0F /* Supporting Files */,
 			);
 			path = dnd_mailer;
@@ -156,6 +161,14 @@
 				5BF1E1CB1D614F36005F8E0F /* Info.plist */,
 			);
 			path = dnd_mailerUITests;
+			sourceTree = "<group>";
+		};
+		5BF1E1E51D61965C005F8E0F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1E1E81D6199A4005F8E0F /* launch_image.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF1E1B41D614F36005F8E0F /* LaunchScreen.storyboard in Resources */,
 				5BF1E1B11D614F36005F8E0F /* Assets.xcassets in Resources */,
 				5BF1E1AC1D614F36005F8E0F /* Main.storyboard in Resources */,
+				5BF1E1E91D6199A4005F8E0F /* launch_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +306,7 @@
 				5BF1E1DC1D618B9F005F8E0F /* CoreDataTableViewController.m in Sources */,
 				5BF1E1A61D614F36005F8E0F /* AppDelegate.m in Sources */,
 				5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */,
+				5BF1E1E21D6193DE005F8E0F /* LaunchView.m in Sources */,
 				5BF1E1DF1D61910C005F8E0F /* InboxView.m in Sources */,
 				5BF1E1A31D614F36005F8E0F /* main.m in Sources */,
 			);
@@ -336,14 +350,6 @@
 				5BF1E1AB1D614F36005F8E0F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5BF1E1B21D614F36005F8E0F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BF1E1B31D614F36005F8E0F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
