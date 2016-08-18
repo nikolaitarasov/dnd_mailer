@@ -10,7 +10,6 @@
 		5BF1E1A31D614F36005F8E0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A21D614F36005F8E0F /* main.m */; };
 		5BF1E1A61D614F36005F8E0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A51D614F36005F8E0F /* AppDelegate.m */; };
 		5BF1E1A91D614F36005F8E0F /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1A81D614F36005F8E0F /* MainMenu.m */; };
-		5BF1E1AC1D614F36005F8E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AA1D614F36005F8E0F /* Main.storyboard */; };
 		5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1AD1D614F36005F8E0F /* dnd_mailer.xcdatamodeld */; };
 		5BF1E1B11D614F36005F8E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1B01D614F36005F8E0F /* Assets.xcassets */; };
 		5BF1E1BF1D614F36005F8E0F /* dnd_mailerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1BE1D614F36005F8E0F /* dnd_mailerTests.m */; };
@@ -20,6 +19,8 @@
 		5BF1E1DF1D61910C005F8E0F /* InboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1DE1D61910C005F8E0F /* InboxView.m */; };
 		5BF1E1E21D6193DE005F8E0F /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1E11D6193DE005F8E0F /* LaunchView.m */; };
 		5BF1E1E91D6199A4005F8E0F /* launch_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1E81D6199A4005F8E0F /* launch_image.jpg */; };
+		5BF1E1EC1D62C19D005F8E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1E1EA1D62C19D005F8E0F /* Main.storyboard */; };
+		5BF1E1EF1D62D642005F8E0F /* CreateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1E1EE1D62D642005F8E0F /* CreateAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		5BF1E1A51D614F36005F8E0F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5BF1E1A71D614F36005F8E0F /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		5BF1E1A81D614F36005F8E0F /* MainMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
-		5BF1E1AB1D614F36005F8E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BF1E1AE1D614F36005F8E0F /* dnd_mailer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dnd_mailer.xcdatamodel; sourceTree = "<group>"; };
 		5BF1E1B01D614F36005F8E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF1E1B51D614F36005F8E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +65,9 @@
 		5BF1E1E01D6193DE005F8E0F /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchView.h; path = ../LaunchView.h; sourceTree = "<group>"; };
 		5BF1E1E11D6193DE005F8E0F /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchView.m; path = ../LaunchView.m; sourceTree = "<group>"; };
 		5BF1E1E81D6199A4005F8E0F /* launch_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_image.jpg; sourceTree = "<group>"; };
+		5BF1E1EB1D62C19D005F8E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BF1E1ED1D62D642005F8E0F /* CreateAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccount.h; sourceTree = "<group>"; };
+		5BF1E1EE1D62D642005F8E0F /* CreateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +130,10 @@
 				5BF1E1DB1D618B9F005F8E0F /* CoreDataTableViewController.m */,
 				5BF1E1E01D6193DE005F8E0F /* LaunchView.h */,
 				5BF1E1E11D6193DE005F8E0F /* LaunchView.m */,
+				5BF1E1ED1D62D642005F8E0F /* CreateAccount.h */,
+				5BF1E1EE1D62D642005F8E0F /* CreateAccount.m */,
+				5BF1E1EA1D62C19D005F8E0F /* Main.storyboard */,
 				5BF1E1B01D614F36005F8E0F /* Assets.xcassets */,
-				5BF1E1AA1D614F36005F8E0F /* Main.storyboard */,
 				5BF1E1B51D614F36005F8E0F /* Info.plist */,
 				5BF1E1AD1D614F36005F8E0F /* dnd_mailer.xcdatamodeld */,
 				5BF1E1E51D61965C005F8E0F /* images */,
@@ -274,8 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF1E1EC1D62C19D005F8E0F /* Main.storyboard in Resources */,
 				5BF1E1B11D614F36005F8E0F /* Assets.xcassets in Resources */,
-				5BF1E1AC1D614F36005F8E0F /* Main.storyboard in Resources */,
 				5BF1E1E91D6199A4005F8E0F /* launch_image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +309,7 @@
 				5BF1E1A91D614F36005F8E0F /* MainMenu.m in Sources */,
 				5BF1E1D91D618AD8005F8E0F /* DataManager.m in Sources */,
 				5BF1E1DC1D618B9F005F8E0F /* CoreDataTableViewController.m in Sources */,
+				5BF1E1EF1D62D642005F8E0F /* CreateAccount.m in Sources */,
 				5BF1E1A61D614F36005F8E0F /* AppDelegate.m in Sources */,
 				5BF1E1AF1D614F36005F8E0F /* dnd_mailer.xcdatamodeld in Sources */,
 				5BF1E1E21D6193DE005F8E0F /* LaunchView.m in Sources */,
@@ -344,10 +350,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5BF1E1AA1D614F36005F8E0F /* Main.storyboard */ = {
+		5BF1E1EA1D62C19D005F8E0F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5BF1E1AB1D614F36005F8E0F /* Base */,
+				5BF1E1EB1D62C19D005F8E0F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

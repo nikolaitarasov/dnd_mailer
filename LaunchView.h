@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LaunchView : UITableViewController
-
-@property (nonatomic, weak) IBOutlet UIButton*signInButton;
+@interface LaunchView : UIViewController
 
 @end
