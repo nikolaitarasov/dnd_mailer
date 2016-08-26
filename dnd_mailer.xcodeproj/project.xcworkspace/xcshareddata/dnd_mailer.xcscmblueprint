@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A37C1914428D76C387BAE320F88B70A80036C212",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A37C1914428D76C387BAE320F88B70A80036C212" : 0,
+    "BB528A86CDCABCFD56B92E48CB15EE76910FCDE7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B3D4D133-355C-4D2E-B8FC-990233AE1656",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A37C1914428D76C387BAE320F88B70A80036C212" : "dnd_mailer\/",
+    "BB528A86CDCABCFD56B92E48CB15EE76910FCDE7" : "NewApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dnd_mailer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dnd_mailer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nikolaitarasov\/dnd_mailer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A37C1914428D76C387BAE320F88B70A80036C212"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/dnd_mailer\/trunk\/dnd_mailer-master",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BB528A86CDCABCFD56B92E48CB15EE76910FCDE7"
+    }
+  ]
+}
