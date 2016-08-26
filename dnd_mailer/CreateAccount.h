@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateAccount : UIViewController <UITextFieldDelegate>
+@interface CreateAccount : UITableViewController <UITableViewDelegate,UITableViewDataSource, UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *nameField;
-@property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordField;
-@property (weak, nonatomic) IBOutlet UITextField *retypePasswordField;
+@property (retain, nonatomic) UITextField *nameField;
+@property (retain, nonatomic) UITextField *emailField;
+@property (retain, nonatomic) UITextField *passwordField;
+@property (retain, nonatomic) UITextField *retypePasswordField;
 
-@property(retain, nonatomic) UIBarButtonItem* saveButton;
+@property(retain, nonatomic) UIBarButtonItem* doneButton;
 
 @end

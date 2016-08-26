@@ -9,12 +9,23 @@
 #import "LaunchView.h"
 #import "MainMenu.h"
 #import "CreateAccount.h"
+#import "LoginView.h"
 
 @interface LaunchView ()
 
 @end
 
 @implementation LaunchView
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];   //it hides
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];    // it shows
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,21 +35,21 @@
     imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y,
                                  image.size.width, image.size.height);
     
-    UIButton *signInButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [signInButton setFrame:CGRectMake(self.view.center.x-100, self.view.center.y+75, 200, 35)];
-    [signInButton setTitle:@"Sign In" forState:UIControlStateNormal];
-    [signInButton setBackgroundColor:
+    UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [loginButton setFrame:CGRectMake(self.view.center.x-100, self.view.center.y+75, 200, 35)];
+    [loginButton setTitle:@"Login" forState:UIControlStateNormal];
+    [loginButton setBackgroundColor:
      [[UIColor alloc] initWithRed:0.f green:50.f blue:130.f alpha:0.5]];
-    signInButton.titleLabel.font = [UIFont systemFontOfSize: 18];
-    [signInButton setTitleColor:([UIColor whiteColor]) forState:UIControlStateNormal];
-    [signInButton titleColorForState:UIControlStateNormal];
-    [signInButton addTarget:self action:@selector(signInAction:) forControlEvents:UIControlEventTouchUpInside];
-    signInButton.userInteractionEnabled = YES;
+    loginButton.titleLabel.font = [UIFont systemFontOfSize: 18];
+    [loginButton setTitleColor:([UIColor whiteColor]) forState:UIControlStateNormal];
+    [loginButton titleColorForState:UIControlStateNormal];
+    [loginButton addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
+    loginButton.userInteractionEnabled = YES;
     
     imageView.frame = self.view.bounds;
     [self.view addSubview:imageView];
-    [imageView addSubview:signInButton];
-    [imageView bringSubviewToFront:signInButton];
+    [imageView addSubview:loginButton];
+    [imageView bringSubviewToFront:loginButton];
     
     UIButton *createAccountButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [createAccountButton setFrame:CGRectMake(
@@ -55,16 +66,22 @@
     [imageView addSubview:createAccountButton];
     [imageView bringSubviewToFront:createAccountButton];
     [imageView setUserInteractionEnabled:YES];
-    NSLog(@"viewDidLoad");
+    
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(
+                                            self.view.center.x-100, self.view.center.y-150, 250, 45)];
+    label.text = @"dndM@il";
+    label.font = [UIFont fontWithName:@"AvenirNext-Bold" size:45];
+    label.textColor = [UIColor whiteColor];
+    [imageView addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
--(void) signInAction:(UIButton*) button {
-    MainMenu* mainMenu = [[MainMenu alloc] init];
-    [self.navigationController pushViewController:mainMenu animated:YES];
+-(void) loginAction:(UIButton*) button {
+    LoginView* loginView = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginView"];
+    [self.navigationController pushViewController:loginView animated:YES];
 }
 
 -(void) createAccountAction:(UIButton*) button {

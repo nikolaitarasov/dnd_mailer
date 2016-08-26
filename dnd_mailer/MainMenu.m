@@ -8,6 +8,10 @@
 
 #import "MainMenu.h"
 #import "InboxView.h"
+#import "LaunchView.h"
+#import "ComposeEmailView.h"
+#import <Parse/PFUser.h>
+#import <CoreText/CTStringAttributes.h>
 
 @interface MainMenu ()
 
@@ -21,11 +25,43 @@ static NSString* menuOptionSection2[] = {@"Contacts", @"Settings", @"Logout"};
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Main menu";
+    
+    PFUser *user = [PFUser currentUser];
+    
+    UILabel *emailTitleLabel = [[UILabel alloc] init];
+    emailTitleLabel.text = user.email;
+    emailTitleLabel.textColor = [UIColor blackColor];
+    emailTitleLabel.font = [UIFont systemFontOfSize:12];
+    emailTitleLabel.numberOfLines = 1;
+    [emailTitleLabel sizeToFit];
+    
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.text = [NSString stringWithFormat:@"%@\n%@", user.username, user.email];
+    titleLabel.backgroundColor = [UIColor clearColor];
+    titleLabel.textColor = [UIColor blackColor];
+    titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    //titleLabel.numberOfLines = 2;
+    titleLabel.textAlignment = NSTextAlignmentLeft;
+    [titleLabel sizeToFit];
+    
+  
+    self.navigationItem.titleView = titleLabel;
+    UIBarButtonItem* composeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
+                                                                    UIBarButtonSystemItemCompose
+                                                                    target:self
+                                                                    action:@selector(composeAction:)];
+    
+    self.navigationItem.rightBarButtonItem = composeButton;
+    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void) composeAction:(UIButton*) button {
+    ComposeEmailView* cem = [[ComposeEmailView alloc] init];
+    [cem showEmail:button];
 }
 
 #pragma mark - Config table
@@ -66,6 +102,15 @@ static NSString* menuOptionSection2[] = {@"Contacts", @"Settings", @"Logout"};
     if ([cell.textLabel.text isEqualToString:@"Inbox"]) {
         InboxView* inboxView = [[InboxView alloc] init];
         [self.navigationController pushViewController:inboxView animated:YES];
+    } else if ([cell.textLabel.text isEqualToString:@"Logout"]) {
+        // Send a request to log out a user
+        [PFUser logOutInBackgroundWithBlock:^(NSError* error){
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                LaunchView* launchView =
+                [self.storyboard instantiateViewControllerWithIdentifier:@"LaunchView"];
+                [self.navigationController pushViewController:launchView animated:NO];
+            });
+        }];
     }
 }
 @end
